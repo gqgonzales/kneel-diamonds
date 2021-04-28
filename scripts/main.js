@@ -1,4 +1,3 @@
-// Styles, sizes, metals, orders
 import { KneelDiamonds } from "./KneelDiamonds.js";
 
 const mainContainer = document.querySelector("#container");
