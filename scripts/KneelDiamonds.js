@@ -4,7 +4,27 @@ import { JewelryStyles } from "./JewelryStyles.js";
 import { Orders } from "./Orders.js";
 import { addCustomOrder } from "./database.js";
 
-document.addEventListener("click", (event) => {});
+document.addEventListener("click", (event) => {
+  const itemClicked = event.target;
+  if (itemClicked.id.startsWith("orderButton")) {
+    addCustomOrder();
+  }
+});
+
+// const metals = getMetals();
+
+// Remember that the function you pass to find() must return true/false
+// const foundMetal = metals.find((metal) => {
+//   return metal.id === order.metalId;
+// });
+// const totalCost = foundMetal.price;
+
+// const costString = totalCost.toLocaleString("en-US", {
+//   style: "currency",
+//   currency: "USD",
+// })`<li>
+//     Order #${order.id} cost ${costString}
+// </li>`;
 
 export const KneelDiamonds = () => {
   return `
@@ -35,4 +55,3 @@ export const KneelDiamonds = () => {
         </article>
     `;
 };
-
