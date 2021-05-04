@@ -32,13 +32,15 @@ const database = {
       metalId: 3,
       sizeId: 2,
       styleId: 3,
+      configId: 1,
       timestamp: 1614659931693,
+      price: 3005.9,
     },
   ],
   configurations: [
-    { id: 1, config: "Ring", price: 1000 },
-    { id: 2, config: "Earrings", price: 20000 },
-    { id: 3, config: "Necklace", price: 400000 },
+    { id: 1, config: "Ring", priceMultiplier: 1 },
+    { id: 2, config: "Earrings", priceMultiplier: 2 },
+    { id: 3, config: "Necklace", priceMultiplier: 4 },
   ],
 };
 export const getStyles = () => {
