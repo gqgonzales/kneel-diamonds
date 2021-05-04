@@ -35,6 +35,11 @@ const database = {
       timestamp: 1614659931693,
     },
   ],
+  configurations: [
+    { id: 1, config: "Ring", price: 1000 },
+    { id: 2, config: "Earrings", price: 20000 },
+    { id: 3, config: "Necklace", price: 400000 },
+  ],
 };
 export const getStyles = () => {
   return [...database.styles];
@@ -52,6 +57,10 @@ export const getOrders = () => {
   return [...database.customOrders];
 };
 
+export const getConfigs = () => {
+  return [...database.configurations];
+};
+
 export const setMetal = (id) => {
   database.orderBuilder.metalId = id;
 };
@@ -62,6 +71,10 @@ export const setSize = (id) => {
 
 export const setStyle = (id) => {
   database.orderBuilder.styleId = id;
+};
+
+export const setConfig = (id) => {
+  database.orderBuilder.configId = id;
 };
 
 // Book 4 Chapter 8
