@@ -3,7 +3,7 @@ import { getConfigs, setConfig } from "./database.js";
 const configs = getConfigs();
 
 document.addEventListener("change", (event) => {
-  if (event.target.name === "size") {
+  if (event.target.name === "configuration") {
     setConfig(parseInt(event.target.value));
   }
 });
